@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import Dashboard from './Dash.js';
 import AddPatients from './AddPatients.js';
 import Appointments from './Appointments.js';
+import DoctorLogin from './DoctorLogin.js';
+import Messages from './Messages.js';
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -19,6 +21,9 @@ export default function App() {
         <Stack.Screen name="Home" component={Dashboard} />
         <Stack.Screen name="AddPatients" component={AddPatients} />
         <Stack.Screen name="Appointments" component={Appointments} />
+        <Stack.Screen name="DoctorLogin" component={DoctorLogin} />
+        <Stack.Screen name="Messages" component={Messages} />
+  
        
       </Stack.Navigator>
     </NavigationContainer>
