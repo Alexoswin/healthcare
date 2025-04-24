@@ -17,7 +17,7 @@ export default function Dashboard({navigation}) {
       </SafeAreaView>
 
       <View style={styles.container4} >
-      <View style={styles.box1}>
+      <TouchableOpacity onPress={() => navigation.navigate('Appointments')}  style={styles.box1}>
         <Text style={{ fontSize: 15 }} > 
           Todays Appointments
 
@@ -26,7 +26,7 @@ export default function Dashboard({navigation}) {
         <Text style={{ fontSize: 24 }} >
             5
           </Text>
-      </View>
+      </TouchableOpacity>
       <View style={styles.box1}>
           <Text style={{ fontSize: 15 }}  > 
             Messages
